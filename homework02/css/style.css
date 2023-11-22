@@ -1,18 +1,15 @@
-
 .name-of-haed {
-    color: #DFD0E7;
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 115%;
-}
+    background: #6F1A71;
+    text-align: center;
 
+}
 .dop-name {
     text-align: center;
     font-size: 48px;
     font-style: normal;
     font-weight: 400;
     line-height: 115%; 
+    background: #6F1A71;
 }
 .colorfull {
     color: #DFD0E7;
@@ -21,5 +18,10 @@
     font-weight: 400;
     line-height: 31px;
     letter-spacing: 0.36px;
-    background-color: #0D0113; 
+    background-color: #100010; 
+}
+.foto {
+    display: block;
+    margin: 0 auto;
+    
 }
