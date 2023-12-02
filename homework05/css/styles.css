@@ -1,0 +1,9 @@
+.nav__header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.li-nav-nav__header {
+    float: left;
+}
