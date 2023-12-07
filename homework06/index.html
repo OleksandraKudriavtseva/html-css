@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+   <form class="form" action="#" method="post" enctype="multipart/form-data">
+        <div class="form__fname">
+            <label for="fname">Повне ім'я</label><br>
+            <input type="text" name="username" id="fname" placeholder="Повне ім'я">
+        </div>
+        <div class="form__email">
+            <label for="email">E-mail</label><br>
+            <input type="email" name="useremail" id="email" placeholder="E-mail">
+        </div>
+        <div class="form__password">
+            <label for="fpassword">Пароль</label><br>
+            <input type="password" name="userpass" id="fpassword" placeholder="Пароль">
+        </div>
+        <div class="form__confirmpassword">
+            <label for="cpassword">Повторіть пароль</label><br>
+            <input type="password" name="password_confirm" id="cpassword" placeholder="Повторіть пароль">
+        </div>
+        <div class="form__radio">
+           <p class="radio__text">Стать</p>
+            <input type="radio" name="userm" id="man">
+            <label for="man">Чоловік</label>
+            <input type="radio" name="userm" id="woman">
+            <label for="woman">Жінка</label>
+        </div>
+        <div class="form__age">
+            <label for="yourage">Вік</label><br>
+            <input type="number" name="userage" id="yourage">
+        </div>
+        <div class="form__cursus">
+            <label for="">Курс</label><br>
+            <select name="choose" id="curs">
+                <option value="choose">--</option>
+                <option value="Front-End">Front-End</option>
+                <option value="Back-End">Back-End</option>
+                <option value="Project Management">Project Management</option>
+                <option value="QA Manual">QA Manual</option>
+            </select>
+        </div>
+        <div class="form__adress">
+            <label for="usertext">Повна адреса</label><br>
+            <textarea name="adress" id="usertext" cols="30" rows="10" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+        </div>
+        <div class="form__agree">
+            <input type="checkbox" name="userbox" id="userbox">
+            <label for="userbox">я погоджуюсь з обробкою персональних даних</label>
+        </div>
+        <br>
+        <button>Зареєструватися</button>
+
+   </form>
+
+</body>
+</html>
