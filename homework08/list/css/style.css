@@ -1,0 +1,118 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --title-font: 700 24px/normal var(--main-font);
+    --sub-font: 400 16px/normal var(--main-font);
+    --text-font: 400 18px/normal var(--main-font);
+    --sub-text-font: 400 11px/normal var(--main-font);
+
+    /* color */
+    
+    --dark-gray-color: #3B3F45;
+    --white-color: #FFFFFF;
+    --gray-color: #4A4F56;
+    --orange-colore: #FF8984;
+
+    --purpule-colore: #88839E;
+    --dark-purpule-colore: #7A7593;
+    --extra-dark-purpule-colore: #625E77;
+    --cross-line-color: #9B96AC;
+
+
+}
+
+body {
+    font: var(--text-font);
+    background-color: var(--dark-gray-color);
+    color: var(--white-color);
+    border: 5px solid;
+}
+ .container {
+    max-width: 534px;
+    margin: 0 auto;
+ }
+
+    /* header section */
+.header {
+    background-color: var(--gray-color);
+    padding: 19px 0 12px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--orange-colore);
+}
+.header__title {
+    font: var(--title-font);
+    margin-bottom: 4px;
+}
+.header__text {
+    font: var(--sub-font);
+}
+
+/* form section */
+
+.form__field {
+    background-color: var(--purpule-colore);
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+.form__field:nth-child(even) {
+    background-color:var(--dark-purpule-colore) ;
+}
+.form__field:hover {
+    background-color: var( --extra-dark-purpule-colore);
+    border-top: 3px solid var(--white-color);
+    border-bottom: 3px solid var(--white-color);
+}
+.form__checkbox {
+    width: 19px;
+    height: 19px;
+}
+.form__sub-text {
+    font: var(--sub-text-font);
+}
+.form__sub-text::before {
+    content: "(";
+}
+.form__sub-text::after {
+    content: " )";
+}
+.form__checkbox:checked +.form__label .form__text {
+    text-decoration: line-through;
+    color: var(--cross-line-color);
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    gap: 5px;
+}
+.form__label {
+    width: 100%;
+    padding: 12px 0;
+    display: flex;
+    
+}
+.form__field:active {
+    background-color: var(--orange-colore);
+}
+.button {
+    margin: 45px auto 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    width: 534px;
+    color:var(--orange-colore);
+    background-color: var(--gray-color);
+    border: none;
+}
