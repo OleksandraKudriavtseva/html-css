@@ -1,0 +1,128 @@
+@import url('https://fonts.cdnfonts.com/css/lucida-sans');
+                
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: Lucida Sans Unicode;
+    --hero-text: 400 21px/normal var(--font-family);
+    --all-text: 400 22px/normal var(--font-family);
+    --hero-end-text: 400 16px/normal var(--font-family);
+
+    --background-color-Lisbon: #68b1ce;
+    --background-color-Paris: #3CC;
+    --background-color-Belgrade: #969;
+    --background-color-Venice: #C24747;
+    --background-color-Tel-Avive: #E2674A;
+    --background-color-Cair: #FC6;
+    --background-color-New-York: #9C9;
+    --background-color-New-Delhi: #699;
+    --background-color-San-Francisco: #C69;
+    --background-color-Tokyo: #396;
+    --background-color-Sydney: #669;
+
+    --background-color: #39C;
+    --border-color: #2B81AC;
+
+    --text-color: #fff;
+}
+.wrraper {
+    margin: 0 auto;
+    font: var(--all-text);
+}
+.main {
+    max-width: 1440px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: 25px solid var(--border-color);
+    padding: 137px;
+}
+img {
+    height: 61px;
+    width: 47px;
+}
+.hero {
+
+    display: flex; 
+    justify-content: left;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 40px;
+}
+.weather {
+    font: var(--hero-text);
+}
+.items {
+    max-width: 1166px;
+    margin-bottom: 37px;
+    text-align: center;
+    /* margin: 0;
+    padding: 0; */
+    display: table;
+}
+.item {
+    border: 2px solid #fff;
+    height: 147px;
+    display: inline-block;
+    padding-top: 26px;
+    /* margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0; */
+   
+}
+.item:first-child {
+    background-color: var(--background-color-Lisbon);
+    width: 50%;
+}
+.item:nth-child(2) {
+    background-color: var(--background-color-Paris);
+    width: 25%;
+}
+.item:nth-child(3) {
+    background-color: var(--background-color-Belgrade);
+    width: 25%;
+}
+.item:nth-child(4) {
+    background-color: var(--background-color-Venice);
+    width: 25%;
+}
+.item:nth-child(5) {
+    background-color: var(--background-color-Tel-Avive);
+    width: 25%;
+}
+.item:nth-child(6) {
+    background-color: var(--background-color-Cair);
+    width: 25%;
+}
+.item:nth-child(7) {
+    background-color: var(--background-color-New-York);
+    width: 25%;
+}
+.item:nth-child(8) {
+    background-color: var(--background-color-New-Delhi);
+    width: 25%;
+}
+.item:nth-child(9) {
+    background-color: var(--background-color-New-York);
+    width: 50%;
+}
+.item:nth-child(10) {
+    background-color: var(--background-color-Tokyo);
+    width: 25%;
+}
+.item:last-child {
+    background-color: var(--background-color-Sydney);
+    width: 100%;
+}
+.item:hover {
+    opacity: 0.3;
+    transition: 0.9s;
+    cursor: pointer;
+}
+.hero_end {
+    font: var(--hero-end-text);
+}
