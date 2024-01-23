@@ -37,7 +37,7 @@ body {
 
 }
  .container {
-    max-width: 1200px;
+    width: 1200px;
     margin-bottom: 100px;
     display: flex;
     justify-content: center;
@@ -128,6 +128,8 @@ body {
 
 .features__container {
     display: inline;
+    
+    /* SVG */
 }
 .features__title {
     margin: 0 auto;
@@ -161,9 +163,7 @@ body {
     display: flex;
     margin: 0 auto;
 }
-.svg {
-    margin-bottom: 100px;
-}
+
 
        /* BENEFITS */
     
