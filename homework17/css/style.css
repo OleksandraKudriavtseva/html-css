@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@900&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans&family=Raleway:ital,wght@0,500;1,500&family=Roboto:wght@900&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=Open+Sans:ital,wght@0,700;1,700&family=PT+Sans&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@900&family=Staatliches&display=swap");
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 120px 135px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header__container {
+  max-width: 450px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header {
+  margin: 0 auto;
+  display: inline;
+}
+.header__subtitle {
+  font: 500 18px/normal "Raleway", sans-serif;
+  color: #898F8F;
+  margin-bottom: 15px;
+}
+.header__title {
+  font: 900 60px/normal "Roboto", sans-serif;
+  color: #FC0;
+  margin-bottom: 40px;
+}
+.header__divider {
+  position: relative;
+}
+.header__solid-left {
+  width: 210px;
+  height: 1px;
+  background-color: #FC0;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+.header__solid-right {
+  width: 210px;
+  height: 1px;
+  background-color: #FC0;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

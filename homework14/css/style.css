@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --font-family-nav: "Staatliches", sans-serif;
+    --font-family-bar: "Francois One", sans-serif;
+    --font-family-text: "PT Sans", sans-serif;
+    --font-family-chapter: "Farro", sans-serif;
+    --font-family: "Roboto", sans-serif;
+
+    --font-family-nav-text: 400 22px/normal var(--font-family-nav);
+    --font-family-bar-text: 400 36px/normal var(--font-family-bar);
+    --font-family-text-text: 400 28px/normal var(--font-family-text);
+    --font-family-chapter-text: 300 20px/normal var(--font-family-chapter);
+    --font-family-text-whos: 700 36px/48px var(--font-family-text);
+
+    --text-color: #000;
+
+    --logos-gray-bg: #E6E6E6;
+    --border-color: #BFBFBF;
+
+}
+
+body {
+    color: var(--text-color);
+    position: relative;
+}
+.wrapper {
+    background-image: url(/img/bg-picture.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 180px;
+    background-attachment: fixed;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.spanunder {
+    text-decoration: underline;
+}
+.divider {
+    width: 100px;
+    height: 8px;
+    background-color: var(--text-color);
+    margin-bottom: 20px;
+}
+b {
+    color: var(--text-color);
+    font-weight: 700;          /* не видно жирності */
+
+}
+
+/* header */
+
+.header__container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font: var(--font-family-nav-text);
+    padding: 26px;
+    margin-bottom: 70px;
+}
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.header__nav-nav-link {
+    display: inline-block;
+    list-style-type: none;
+}
+.header__nav-nav-link:first-child::after{
+    content: "/";
+    padding: 10px;
+}
+.header__input{
+    visibility: hidden;
+}
+/* whos using */
+
+.header__nav-nav-whos {
+    color: var(--text-color);
+    text-decoration: none;
+}
+.whos__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+.whos__hero {
+    font: var(--font-family-text-whos);
+    color: var(--text-color);
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.whos__divider-h1 {
+    width: 100px;
+    height: 8px;
+    background-color: var(--text-color);
+}
+.whos__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px 15px;
+    gap: 30px;
+    
+}
+.whos__item {
+    padding: 50px 30px;
+    background-color: var(--logos-gray-bg);
+    border-radius: 8px;
+}
+.whos__item:hover .whos__img{
+    /* transform: rotateX(180deg) 0.8s;
+    transition: 0.1s;
+    display: none; */
+}
+.whos__item:hover {
+
+    /* transform: rotateX(180deg) 0.8s; */
+    background-image: url(/img/facebook-logo-white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--text-color);
+}
+
+.whos__item:nth-child(1){
+    width: 270px;
+    height: 162px;
+    
+    
+    
+}
+.whos__item:nth-child(7) {
+    width: 270px;
+    height: 180px;
+    padding: 20px 30px;
+}
+.whos__item:nth-child(5) {
+    width: 270px;
+    height: 180px;
+    padding: 60px 30px;
+}
+.whos__item:nth-child(6) {
+    width: 270px;
+    height: 180px;
+    padding: 60px 30px;
+}
+.whos__item:nth-child(8) {
+    width: 270px;
+    height: 180px;
+    padding: 30px 30px;
+}
+
+
+/* page */
+
+.dopcontainer {
+    display: grid;
+    grid-template-columns: 385px 1fr;
+    gap: 30px;
+}
+
+/* aside */
+.aside {
+    position: relative;
+}
+.aside__nav {
+    position: sticky;
+    top: 15px;
+}
+.aside__nav-nav {
+    list-style-type: none;  
+}
+.aside__nav-nav-link {
+    border-bottom: 1px solid var(--text-color);
+    margin-bottom: 70px;
+}
+.aside__nav-nav-link-a {
+    text-decoration: none;
+    color: var(--text-color);
+    font: var(--font-family-bar-text);
+    line-height: 48px;
+    letter-spacing: 1.44px;
+}
+
+/* main */
+
+.main__chapter1__container {
+    width: 785px;
+}
+.main__chapter1-title {
+    font: var(--font-family-bar-text);
+    margin-bottom: 40px;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    width: 344px;
+    position: relative;
+}
+.main__chapter1-title::after {
+    content: "Chapter 1";
+    gap: 10px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font: var(--font-family-chapter-text);   /* дуже великий текст не знаю як переробити */
+}
+.main__chapter1-text {
+    font: var(--font-family-text-text);
+    line-height: 48px;
+    margin-bottom: 70px;
+}
+/* 2 */
+.main__chapter2__container {
+    width: 785px;
+}
+.main__chapter2-title {
+    font: var(--font-family-bar-text);
+    margin-bottom: 40px;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    width: 420px;
+    position: relative;
+}
+.main__chapter2-title::after {
+    content: "Chapter 1";
+    gap: 10px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font: var(--font-family-chapter-text);   /* дуже великий текст не знаю як переробити */
+}
+.main__chapter2-text {
+    font: var(--font-family-text-text);
+    line-height: 48px;
+    margin-bottom: 70px;
+}
+/* 3 */
+.main__chapter3__container {
+    width: 785px;
+    margin-bottom: 70px;
+}
+.main__chapter3-title {
+    font: var(--font-family-bar-text);
+    margin-bottom: 40px;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    width: 477px;
+    position: relative;
+}
+.main__chapter3-title::after {
+    content: "Chapter 1";
+    gap: 10px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font: var(--font-family-chapter-text);   /* дуже великий текст не знаю як переробити */
+}
+.main__chapter3-text {
+    font: var(--font-family-text-text);
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+.bgrcolor {
+    background-color: rgb(174, 170, 170);
+}
+/* 4 */
+.main__chapter4__container {
+    width: 785px;
+    margin-bottom: 90px;
+}
+.main__chapter4-title {
+    font: var(--font-family-bar-text);
+    margin-bottom: 40px;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    width: 465px;
+    position: relative;
+}
+.main__chapter4-title::after {
+    content: "Chapter 1";
+    gap: 10px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font: var(--font-family-chapter-text);   /* дуже великий текст не знаю як переробити */
+}
+.main__chapter4-text {
+    font: var(--font-family-text-text);
+    line-height: 48px;
+    margin-bottom: 40px;
+}

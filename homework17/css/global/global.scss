@@ -1,0 +1,24 @@
+
+
+$font-family-Raleway: "Raleway", sans-serif;
+$font-family-Roboto: "Roboto", sans-serif;
+$font-family-Open: "Open Sans", sans-serif;
+
+$family-subtitle: 500 18px/normal $font-family-Raleway;
+$family-title: 900 60px/normal $font-family-Roboto;
+$family-h2: 900 36px/normal $font-family-Roboto;
+$family-sub-h2: 400 24px/normal $font-family-Raleway;
+$family-text: 500 14px/normal $font-family-Raleway;
+$family-sub-text: 700 14px/normal $font-family-Open;
+
+$color-subtitle: #898F8F;
+$color-gold: #FC0;
+$color-text-h2-sub-text: #666;
+$color-text: #333;
+
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 120px 135px;
+}

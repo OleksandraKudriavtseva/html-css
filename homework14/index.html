@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=PT+Sans&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=Open+Sans:ital,wght@0,700;1,700&family=PT+Sans&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@700&family=Staatliches&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <meta name="viewport" content="width=device-width"> -->
+    <title>homework14</title>
+</head>
+<body>
+   <div class="wrapper">
+    <div class="container">
+        <header class="header">
+            <div class="header__container">
+                <nav class="header__nav">
+                    <img class="eng-logo" src="./img/ENG.svg" alt="eng">
+                    <ul class="header__nav-nav">
+                        <li class="header__nav-nav-link">Documentation</li>
+                        <li class="header__nav-nav-link"><a class="header__nav-nav-whos" href="#who">Who's using</a></li>
+                    </ul>
+                </nav>
+                <img class="logo" src="./img/company-logo-black.svg" alt="logo">
+            </div>
+        </header>
+        <div class="dopcontainer">
+            <aside class="aside">
+                <nav class="aside__nav">
+                    <ul class="aside__nav-nav">
+                    <li class="aside__nav-nav-link"><a class="aside__nav-nav-link-a" href="#c1">INTRODUCTION</a></li>
+                    <li class="aside__nav-nav-link"><a class="aside__nav-nav-link-a" href="#c2">CORE COMPONENTS</a></li>
+                    <li class="aside__nav-nav-link"><a class="aside__nav-nav-link-a" href="#c3">REACT FUNDAMENTALS</a></li>
+                    <li class="aside__nav-nav-link"><a class="aside__nav-nav-link-a" href="#c4">HANDLING TEXT INPUT</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="main">
+                <section class="main__chapter1">
+                    <div id="c1" class="main__chapter1__container container">
+                        <div class="divider"></div>
+                        <h1 class="main__chapter1-title">INTRODUCTION</h1>
+                        <p class="main__chapter1-text">Welcome to the very start of your React Native journey! If you're looking 
+                            for environment setup instructions, they've moved to <span class="spanunder">their own section</span>. 
+                            Continue reading for an introduction to the documentation, Native Components, React, and more!</p>
+                    </div>
+                </section>
+                <section class="main__chapter2">
+                    <div class="main__chapter2__container container">
+                        <div class="divider"></div>
+                        <h1 id="c2" class="main__chapter2-title">CORE COMPONENTS</h1>
+                        <p class="main__chapter2-text">React Native is an open source framework for building Android and iOS applications using React 
+                            and the app platform&apos;s native capabiles. With React Native, you use JavaScript to access your platform&apos;s APIs as well as to describe the 
+                            appearance and behavior of your UI using React components: <i>bundles of reusable,
+                             nestable code</i>. You can learn more about React in the next section. But first, let&apos;s cover how components work in React Native.</p>
+                    </div>
+                </section>
+                <section class="main__chapter3">
+                    <div class="main__chapter3__container container">
+                        <div class="divider"></div>
+                        <h1 id="c3" class="main__chapter3-title">REACT FUNDAMENTALS</h1>
+                        <p class="main__chapter3-text">React Native runs on <span class="spanunder">React</span>, a popular open source library for building user 
+                            interfaces with JavaScript. To make the most of React Native, it helps to understand React itself. 
+                            This section can get you started or can serve as a refresher course.</p>
+                        <p class="main__chapter3-text">We&apos;re going to cover the core concepts behind React:</p>
+                        <p class="main__chapter3-text"><b>+ components.</b> The rest of this introduction to React uses cats in its examples: friendly, 
+                            approachable creatures that need names and a cafe to work in.</p>
+                        <p class="main__chapter3-text"><b>+ JSX.</b> React and React Native use JSX, a syntax that lets you write elements inside JavaScript like so:  
+                            <span class="bgrcolor">&lt;Text&gt;Hello, I am your cat!&lt;Text&gt;</span>.</p>
+                        <p class="main__chapter3-text">The React docs have <span class="spanunder">a comprehensive guide to JSX</span> you can refer to learn even more. Because 
+                            JSX is JavaScript, you can use variables inside it. Here you are 
+                            declaring a name for the cat, <span class="bgrcolor">name</span>, and embedding it with curly braces inside <span class="bgrcolor"></span>&lt;Text&gt;</p>
+                        <p class="main__chapter3-text"><b>+ props.</b> Props is short for &quot;properties&quot;. </p>
+                        <p class="main__chapter3-text"><b>+ state.</b> While you can think of props as arguments you use to configure how components render, 
+                            state is like a component&apos;s personal data storage. State is useful for handling data that changes 
+                            over time or that comes from user interaction. State gives your components memory!</p>
+                    </div>
+                </section>
+                <section class="main__chapter4">
+                    <div class="main__chapter4__container container">
+                        <div class="divider"></div>
+                        <h1 id="c4" class="main__chapter4-title">HANDLING TEXT INPUT</h1>
+                        <p class="main__chapter4-text">TextInput is a Core Component that allows the user to enter text. It has an <i>onChangeText</i> 
+                            prop that takes a function to be called every time the text changed, and an 
+                            onSubmitEditing prop that takes a function to be called when the text is submitted.</p>
+                        <p class="main__chapter4-text">For example, let's say that as the user types, you're 
+                            translating their words into a different language. In this new language, every single word is written the same way: 🍕. 
+                            So the sentence &quot;Hello there Bob&quot; would be translated as &quot;🍕 🍕&quot;.</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <section class="whos">
+        <div class="whos__container">
+            <div class="whos__hero">
+                <div class="whos__divider-h1"></div>
+            <h1 id="who" class="whos__h1">Who’s using</h1>
+            </div>
+            <div class="whos__items">
+                <div class="whos__item">
+                    <img class="whos__img" src="./img/facebook-logo-black.svg" alt="img">
+                </div>
+                <div class="whos__item">
+                    <img class="whos__img" src="./img/instagram-logo-black.svg" alt="img">
+                </div>
+                <div class="whos__item">
+                    <img class="whos__img" src="./img/shopify-logo-black.svg" alt="img">
+                </div>
+                <div class="whos__item">
+                    <img class="whos__img" src="./img/skype-logo-black.svg" alt="img">
+                </div>
+                <div class="whos__item">
+                    <img class="whos__img" src="./img/g14.svg" alt="img">
+                </div>
+                <div class="whos__item">
+                    <img class="whos__img" src="./img/wix.com-logo-black.svg" alt="img">
+                </div>
+                <div class="whos__item">
+                    <img class="whos__img" src="./img/saleforse-logo-black.png" alt="img">
+                </div>
+                <div class="whos__item">
+                    <img class="whos__img" src="./img/soundcloud-logo-black.svg" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+   </div> 
+
+</body>
+</html>
